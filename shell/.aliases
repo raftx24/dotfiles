@@ -37,12 +37,15 @@ alias o="open ."
 # List all files colorized in long format
 alias l="ls -laF"
 
-# PhpStorm
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-
 # PHP
 alias switch-php80="brew unlink php@7.4 && brew link --overwrite --force php"
 alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
+alias switch-php73="brew unlink php && brew link --overwrite --force php@7.3"
+alias switch-php72="brew unlink php && brew link --overwrite --force php@7.2"
+
+alias php74="/usr/local/Cellar/php@7.4/7.4.15/bin/php"
+alias php73="/usr/local/Cellar/php@7.3/7.3.27/bin/php"
+alias php72="/usr/local/Cellar/php@7.2/7.2.34_1/bin/php"
 
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
