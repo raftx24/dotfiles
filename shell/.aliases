@@ -29,6 +29,7 @@ alias gc="git checkout"
 alias gpo="git push origin"
 alias gm="git merge"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gta="git describe --tags \`git rev-list --tags --max-count=1\`"
 
 # Fast open
 alias o="open ."
@@ -76,6 +77,9 @@ alias scrape="scrapeUrl"
 # Switch NPM
 alias npmnpm="npm config set registry https://registry.npmjs.org"
 alias npmspatie="npm config set registry https://npm.spatie.be"
+alias pnp='npm version patch; npm publish; git push --follow-tags'
+alias mnp='npm version minor; npm publish; git push --follow-tags'
+alias mmnp='npm version major; npm publish; git push --follow-tags'
 
 # Restart touch bar
 alias touchbar="killall ControlStrip"
